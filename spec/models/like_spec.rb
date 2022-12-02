@@ -23,7 +23,7 @@ RSpec.describe Like, type: :model do
   let(:like) do
     Like.new(
       author: user,
-      post: post
+      post:
     )
   end
 
@@ -41,5 +41,4 @@ RSpec.describe Like, type: :model do
     it { should belong_to(:post) }
     it { should belong_to(:author) }
   end
-
 end
