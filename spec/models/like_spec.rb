@@ -37,7 +37,9 @@ RSpec.describe Like, type: :model do
     expect(like).to be_valid
   end
 
-  it { should belong_to(:post) }
-  it { should belong_to(:author) }
+  describe 'associations' do
+    it { should belong_to(:post) }
+    it { should belong_to(:author) }
+  end
 
 end
