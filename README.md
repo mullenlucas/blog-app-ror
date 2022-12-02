@@ -1,34 +1,92 @@
-![Microverse](https://img.shields.io/badge/-Microverse-%20%236f23ff?style=for-the-badge)
+<a name="readme-top"></a>
 
-![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
-![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+<div align="center">
 
-# Rubycal - Blog Web App 🗒️✏️
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Rubycal Blog Web App</b></h3>
+
+</div>
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+# 📖 Rubycal Blog Web App <a name="about-project"></a>
 
 > This project creates a fully functional blog app website that shows the list of posts and empower readers to interact with them by adding comments and liking posts. Made with Ruby on Rails
 
-## Database ERD Diagram :memo:
+**Rubycal Blog Web App** is a blog application for sharing lessons and experiences on coding with Ruby on Rails!
 
-![](./blog_app_erd.png)
+## 🛠 Built With <a name="built-with"></a>
 
-## Built With :hammer_and_wrench:
+### Tech Stack <a name="tech-stack"></a>
 
-- **Ruby** Popular programming language that’s used for lots of things, from web app development to data analysis.
-- **Gitflow** Correct use of Branches for deployment and features development
-- **Linter checks (rubocop)** Local and Pull Request check for errors, bugs and stylistic errors in code
-- **Rails** [v 7.0.4] - A server-side web application framework written in Ruby under the MIT License
-  -- **PostgreSQL** A powerful, open source object-relational database system
+> This Web App was built with Ruby on Rails, using Gitflow and customized Linters
 
-## Getting started
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
 
-### Clone the repository
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+  </ul>
+</details>
 
-```shell
-git clone https://github.com/mullenlucas/blog-app.ror.git
-cd blog-app-ror
-```
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
-### Check your Ruby version
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Posting** user-created content to the rubycal blog for sharing experiences and lessons on Ruby on Rails programming practices
+- **Commenting** to discuss and share information on each post
+- **Liking** to show appreciation for the author's labor
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Coming soon...
+
+<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+#### Check your Ruby version or install it
 
 ```shell
 ruby --version && irb
@@ -42,6 +100,17 @@ If not, install the right ruby version using [rbenv](https://github.com/rbenv/rb
 rbenv install 3.1.2
 ```
 
+To get a local copy up and running, follow these steps.
+
+### Clone the repository
+
+```shell
+git clone https://github.com/mullenlucas/blog-app.ror.git
+cd blog-app-ror
+```
+
+### Install
+
 - Run `bundle install`
 - Run `rails server`
 - Open Browser `http://localhost:3000/`
@@ -49,44 +118,64 @@ rbenv install 3.1.2
 - Run `rails db:create`.
 - Create a `.envs` file using the link to host postgres credentials.
 
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  rails server
+```
+
 ### Testing
 
 To test and utilize the code, use the terminal and run ruby by inputting `irb` in the command line, or by using an extension in Visual Studio Code like _Code runner_
 
 The user then can modify and play with the files as needed
 
-<!-- ### Install dependencies
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
-
-```shell
-bundle && yarn
-``` -->
-
-## Authors
+## 👥 Authors <a name="authors"></a>
 
 👤 **Lucas Mullen**
 
 - GitHub: [@mullenlucas](https://github.com/mullenlucas)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-mullen-447312119/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Validations and Model specs**
+- **Setup and controllers**
+- **Views and Forms**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Hat tip to anyone whose code was used
 - Inspiration
 - To all the collaborators for the Readme Template
 - The Microverse Team
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./LICENSE.md) licensed.
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
