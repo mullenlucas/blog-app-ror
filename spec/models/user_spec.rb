@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   subject do
     User.create(
-      name: 'Taylor',
+      name: 'Messi',
       photo: 'https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/primary/wfrhxc0kh2vvq77sonki',
       bio: 'Football player',
       posts_counter: 9
