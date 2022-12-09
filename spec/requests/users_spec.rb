@@ -21,9 +21,9 @@ RSpec.describe 'Users', type: :request do
 
   describe 'GET /show' do
     before(:each) do
-      @user = User.create(name: 'Messi', 
-        photo: 'https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/primary/wfrhxc0kh2vvq77sonki', 
-        bio: 'Football GOAT and Ruby on Rails educator')
+      @user = User.create(name: 'Messi',
+                          photo: 'https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/primary/wfrhxc0kh2vvq77sonki',
+                          bio: 'Football GOAT and Ruby on Rails educator')
       get user_path(@user.id)
     end
 
