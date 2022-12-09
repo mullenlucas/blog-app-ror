@@ -1,13 +1,15 @@
 <div>
-  <section>
-    <div>User Image</div>
-    <div>
-      <h1><a><%= @user.name %></a></h1>
-      <span>Number of posts:<%= @user.posts_counter %></span>
+  <section class="users-ul">
+    <div class="users-li">
+    <div><%= image_tag @user.photo %></div>
+    <div class="user-info">
+      <h2><a><%= @user.name %></a></h2>
+      <p>Number of posts:<%= @user.posts_counter %></p>
+    </div>
     </div>
   </section>
 
-  <section>
+  <section class="user-data">
     <h2>Bio</h2>
     <p><%= @user.bio %></p>
   </section>
@@ -15,7 +17,7 @@
   <section>
    <ul>
      <% @user.posts.each do |post| %>
-       <li>
+       <li class="user-data">
          <h3>Post <%='#'%><%= post.id %></h3>
          <p>post.text</p>
          <span>Comments: <%= post.comments_counter %></span>
@@ -23,6 +25,7 @@
        </li>
      <% end %>
    </ul>
-   <button>See all posts</button>
+   
   </section>
+  <button>See all posts</button>
 </div>
