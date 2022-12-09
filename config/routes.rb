@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in   
   get 'users/index'
-  root 'users#show'
+  root 'users#index'
   # Defines the root path route ("/")
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :show]
