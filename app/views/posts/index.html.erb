@@ -1,22 +1,29 @@
-<div>
-  <section>
-    <div>
+<main>
+  <section class="user-card">
+    <div class="user-image"><%= image_tag @user.photo %></div>
+    <div class="card-details">
       <h2><a><%= @user.name %></a></h2>
-      <span>Number of posts:<%= @user.posts_counter %></span>
+      <span>Number of posts: <%= @user.posts_counter %></span>
     </div>
   </section>
 
-  <section>
-   <ul>
+  <section class="post-sec">
+    <ul>
       <% @user.posts.each do |post| %>
-       <li>
-         <h3>Post <%='#'%><%= post.id %></h3>
-         <p>post.text</p>
-         <span>Comments: <%= post.comments_counter %></span>
-         <span>Likes: <%= post.likes_counter %></span>
-       </li>
-     <% end %>
-   </ul>
-   <a>Pagination</a>
+        <%= link_to user_post_path(@user.id, post.id) do %>
+          <li class="post-card">
+            <h3>Post <%='#'%><%= post.id %></h3>
+            <p><%= post.text %></p>
+            <span>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %></span>
+          </li>
+          <div class="comments">
+            <% post.last_five_comments.each do |comment| %>
+              <p><%= comment.author.name %>: <%= comment.text %></p>
+            <% end %>
+          </div>
+        <% end %>
+      <% end %>
+    </ul>
+    <button class="see-more">Pagination</button>
   </section>
-</div>
+</main>
