@@ -1,7 +1,7 @@
 <main>
-  <h2 id="users-title">Users</h2>
+  <h2 id="titled">Users</h2>
 
-  <ul class="users-ul">
+  <ul>
     <% @users.each do |user| %>
       <%= link_to user_path(user.id) do %>
         <li class="user-card">

@@ -8,3 +8,68 @@ main {
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+}
+
+.user-image img {
+  height: 64px;
+  width: 64px;
+}
+
+.bio-card {
+  margin: 0.5rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-card {
+  margin: 0.5rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-card span {
+  margin-left: auto;
+}
