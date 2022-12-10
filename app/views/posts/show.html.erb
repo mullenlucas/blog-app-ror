@@ -1,19 +1,20 @@
-<div>
-  <section class="comments">
-    <div class="p-lk-cm">
-      <h3>Post <%='#'%><%= @post.id %> by <%= @user.name %> </h3>
+<main>
+  <section class="post-content">
+    <div class="aligned-f">
+      <h2>Post: <%= @post.title %> (#<%= @post.id %>) by <%=@user.name%></h2>
       <span>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></span>
     </div>
-    <p><%= @post.text %></p>
+      <p><%= @post.text %></p>
   </section>
 
-  <section class="comments">
-    <ul class="clean-ul">
-    <% @post.comments.each do |comment| %>
-      <li>
-        <span><%= comment.author.name %>: <%= comment.text %></span>
-      </li>
-    <% end %>
+  <section class="comment-section">
+    <h2>Comments</h2>
+    <ul class="comments">
+      <% @post.comments.each do |comment| %>
+        <li class="comment-spec">
+          <span><%= comment.author.name %>: <%= comment.text %></span>
+        </li>
+      <% end %>
     </ul>
   </section>
-</div>
+</main>

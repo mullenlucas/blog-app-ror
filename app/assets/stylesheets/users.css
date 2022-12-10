@@ -25,6 +25,11 @@ ul {
   width: 100%;
 }
 
+.user-card span {
+  margin-top: auto;
+  padding-bottom: 4px;
+}
+
 .card-details {
   display: flex;
   justify-content: space-around;
@@ -46,21 +51,11 @@ ul {
   width: 64px;
 }
 
-.bio-card {
-  margin: 0.5rem;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.post-card {
-  margin: 0.5rem;
-  padding: 1.2rem;
+.bio-card,
+.post-card,
+.comments {
+  margin: 0.4rem;
+  padding: 0.4rem 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
