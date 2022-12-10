@@ -10,6 +10,22 @@ RSpec.describe 'Posts', type: :request do
     end
   end
 
+  describe 'GET #index' do
+    before(:example) { get user_posts_path(@user.id) }
+
+    it 'returns http success' do
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'renders correct template' do
+      expect(response).to render_template(:index)
+    end
+
+    it 'includes placeholder text' do
+      expect(response.body).to include(@user.name)
+    end
+  end
+
   describe 'GET #show' do
     before(:example) do
       @post = @user.posts[0]
@@ -22,10 +38,6 @@ RSpec.describe 'Posts', type: :request do
 
     it 'renders correct template' do
       expect(response).to render_template(:show)
-    end
-
-    it 'includes placeholder text' do
-      expect(response.body).to include(@post.title)
     end
   end
 end

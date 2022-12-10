@@ -11,14 +11,21 @@
   </section>
 
   <section>
-   <ul>
-      <% @user.posts.each do |post| %>
-       <li>
+   <ul class="users-ul">
+     <% @user.posts.each do |post| %>
+       <li class="user-data">
          <h3>Post <%='#'%><%= post.id %></h3>
-         <p>post.text</p>
+         <p><%= post.text %></p>
+        <div class="lk-cm">
          <span>Comments: <%= post.comments_counter %></span>
          <span>Likes: <%= post.likes_counter %></span>
+        </div>
        </li>
+       <div class="comments">
+        <% post.last_five_comments.each do |comment| %>
+          <p><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %>
+        </div>
      <% end %>
    </ul>
    <a>Pagination</a>

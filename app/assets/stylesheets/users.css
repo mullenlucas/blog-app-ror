@@ -26,17 +26,32 @@
   align-self: end;
 }
 
-.user-data {
+.user-data,
+.comments {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   padding: 12px;
   border: 1px solid rgb(175, 175, 175);
-  margin: 16px;
+  margin: 4px 16px;
 }
 
 .lk-cm {
   float: right;
   gap: 12px;
+}
+
+.clean-ul {
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+
+.p-lk-cm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
