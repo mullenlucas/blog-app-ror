@@ -1,0 +1,18 @@
+<main>
+  <%= notice %>
+  <div class="new-post-card">
+    <h2>Write you new Post!</h2>
+    <%= form_with model: post, url: user_posts_path, method: :post, local: true do |f| %>
+      <div class="input">
+        <%= f.label :title, "Caption/Title" %>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="input">
+        <%= f.label :text %>
+        <%= f.text_field :text, id: "text-input" %>
+      </div>
+      <%= f.submit "Create"%>
+    <% end %>
+  </div>
+</main>

@@ -4,6 +4,7 @@
     <div class="card-details">
       <h3><a><%= @user.name %></a></h3>
       <span>Number of posts: <%= @user.posts_counter %></span>
+      <%= link_to 'New Post', new_user_post_path(@user.id) %>
     </div>
   </section>
 
