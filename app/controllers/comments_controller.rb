@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
       redirect_to user_post_path(@user.id, @post.id)
     else
       flash[:notice] = "Error: Couldn't create comment"
-      render :new, locals: { comment: comment }
+      render :new, locals: { comment: }
     end
   end
 end

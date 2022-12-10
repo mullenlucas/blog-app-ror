@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   def new
     post = Post.new
     respond_to do |format|
-      format.html { render :new, locals: { post: post} }
+      format.html { render :new, locals: { post: } }
     end
   end
 
@@ -22,10 +22,10 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html do
         if post.save
-          redirect_to user_posts_path(current_user.id), notice: "Post successfully created"
+          redirect_to user_posts_path(current_user.id), notice: 'Post successfully created'
         else
           flash[:notice] = "Error: Couldn't create post"
-          render :new, locals: { post: post }
+          render :new, locals: { post: }
         end
       end
     end
