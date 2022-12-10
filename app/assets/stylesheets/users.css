@@ -1,57 +1,10 @@
-.users-ul {
-  list-style: none;
-  padding: 16px;
-  margin: 0;
+main {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  justify-content: center;
 }
 
-.users-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px;
-  border: 1px solid rgb(175, 175, 175);
-}
-
-.user-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-}
-
-.user-info p {
-  align-self: end;
-}
-
-.user-data,
-.comments {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  padding: 12px;
-  border: 1px solid rgb(175, 175, 175);
-  margin: 4px 16px;
-}
-
-.lk-cm {
-  float: right;
-  gap: 12px;
-}
-
-.clean-ul {
-  list-style: none;
-  padding: 16px;
-  margin: 0;
-}
-
-.p-lk-cm {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+a {
+  text-decoration: none;
 }
