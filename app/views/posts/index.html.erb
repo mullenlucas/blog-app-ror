@@ -4,6 +4,7 @@
     <div class="card-details">
       <h2><a><%= @user.name %></a></h2>
       <span>Number of posts: <%= @user.posts_counter %></span>
+      <%= link_to 'New Post', new_user_post_path(@user.id), :class => "new-p-link" %>
     </div>
   </section>
 
