@@ -7,12 +7,12 @@ RSpec.describe 'Post Show', type: :feature do
       bio: 'Software Creator',
       photo: 'https://loremflickr.com/cache/resized/65535_52225415595_375deb9379_z_640_360_nofilter.jpg',
       posts_counter: 0
-  )
+    )
 
     @user1 = User.create(
       name: 'Izumi',
       bio: 'Backend Stagnator',
-      photo: 'https://loremflickr.com/cache/resized/65535_52225415595_375deb9379_z_640_360_nofilter.jpg',
+      photo: 'https://loremflickr.com/cache/resized/65535_51819602222_b063349f16_z_640_360_nofilter.jpg',
       posts_counter: 5
     )
 
