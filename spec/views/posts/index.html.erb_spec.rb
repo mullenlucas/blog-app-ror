@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe 'Post Index', type: :feature do
   before(:each) do
     @user = User.create(
-        name: 'Nuk Tashino',
-        bio: 'Software Creator',
-        photo: 'https://loremflickr.com/cache/resized/65535_52225415595_375deb9379_z_640_360_nofilter.jpg',
-        posts_counter: 0
+      name: 'Nuk Tashino',
+      bio: 'Software Creator',
+      photo: 'https://loremflickr.com/cache/resized/65535_52225415595_375deb9379_z_640_360_nofilter.jpg',
+      posts_counter: 0
     )
 
     @post1 = Post.create(
@@ -112,6 +112,5 @@ RSpec.describe 'Post Index', type: :feature do
       visit user_posts_path(@user)
       expect(page).to have_link('New Post')
     end
-    
   end
 end

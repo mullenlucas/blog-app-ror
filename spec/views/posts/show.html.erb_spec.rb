@@ -28,11 +28,9 @@ RSpec.describe 'Post Show', type: :feature do
     Comment.create(post_id: @post.id, author_id: @user.id, text: 'Or is this just fantasy')
     Comment.create(post_id: @post.id, author_id: @user1.id, text: 'Something something')
     Like.create(post_id: @post.id, author_id: @user1.id)
-
   end
 
   describe 'Displays the entire body comments counters, and title' do
-
     it 'displays the counters' do
       visit user_post_path(@user, @post)
       expect(page).to have_content('Comments: 3')
@@ -55,9 +53,9 @@ RSpec.describe 'Post Show', type: :feature do
     end
 
     it 'checks there is a comment section' do
-        visit user_post_path(@user, @post)
-        # expect(page).to have_css("ul[class*='comments-section']")
-        expect(page).to have_content('Comments')
+      visit user_post_path(@user, @post)
+      # expect(page).to have_css("ul[class*='comments-section']")
+      expect(page).to have_content('Comments')
     end
 
     it 'displays all comments with usernames' do
