@@ -1,0 +1,7 @@
+<%= form_with model: Comment, url: user_post_comments_path(@user.id, @post.id), method: :post, local: true do |f| %>
+  <div class="new-c-form">
+    <%= f.label :text, "Comment" %><br>
+    <%= f.text_field :text, placeholder: "Write your opinions here!", :class => "new-p-text"  %>
+    <%= f.submit "Send", :class => "new-p-link" %>
+  </div>
+<% end %>

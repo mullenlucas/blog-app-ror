@@ -1,4 +1,5 @@
-.post-content {
+.post-content,
+.new-c-form {
   margin: 0.4rem;
   padding: 0.4rem 1.2rem;
   display: flex;
@@ -15,5 +16,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
+}
+
+.righter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: end;
+}
+
+.new-p-text {
+  width: 100%;
+  height: 100px;
+  resize: none;
 }

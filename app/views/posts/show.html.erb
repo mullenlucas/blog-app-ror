@@ -1,8 +1,11 @@
 <main>
   <section class="post-content">
     <div class="aligned-f">
-      <h2>Post: <%= @post.title %> (#<%= @post.id %>) by <%=@user.name%></h2>
-      <span>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></span>
+      <h2><%= @post.title %> (#<%= @post.id %>) by <%=@user.name%></h2>
+      <div class="righter">
+        <span>Comments: <%= @post.comments_counter %> - Likes: <%= @post.likes_counter %></span>
+        <%= render "likes/like" %>
+      </div>
     </div>
       <p><%= @post.text %></p>
   </section>
@@ -16,5 +19,9 @@
         </li>
       <% end %>
     </ul>
+    <div class="add-comment">
+      <h2>Add new comment</h2>
+      <%= render "comments/comment" %>
+    </div>
   </section>
 </main>
