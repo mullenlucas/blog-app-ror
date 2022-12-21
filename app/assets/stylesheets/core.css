@@ -67,3 +67,9 @@ ul {
   -webkit-transform: translateY(-4rem);
   transform: translateY(-4rem);
 }
+
+.field {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
