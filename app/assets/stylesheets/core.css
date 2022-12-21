@@ -47,3 +47,23 @@ ul {
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   outline: 0;
 }
+
+.input-st {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(212, 212, 212);
+  border: none;
+  width: 20%;
+  border-bottom: 0.3rem solid rgba(206, 185, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.input-st:placeholder-shown + .input-st {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
