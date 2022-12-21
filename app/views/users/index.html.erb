@@ -2,9 +2,9 @@
   <div>
     <h2 id="titled">Users</h2>
     <% if user_signed_in? %>
-    <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+    <%= button_to "Log out", destroy_user_session_path, method: :delete, :class => "btn" %>
     <% else %>
-      <%= link_to "Sign In", new_user_session_path %> 
+      <%= link_to "Sign In", new_user_session_path, :class => "btn" %> 
     <% end %>
   </div>
 
