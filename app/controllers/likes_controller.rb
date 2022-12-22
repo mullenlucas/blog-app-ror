@@ -1,4 +1,4 @@
-class Api::V1::LikesController < ApplicationController
+class LikesController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     @user = User.find(params[:user_id])
