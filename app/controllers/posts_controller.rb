@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(comments: [:author])
@@ -17,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.new(params.require(:post).permit(:title, :text))
+    post = Post.new(post_params)
     post.author = current_user
     respond_to do |format|
       format.html do
@@ -29,5 +30,20 @@ class PostsController < ApplicationController
         end
       end
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.author.decrement!(:posts_counter)
+    @post.destroy
+    respond_to do |format|
+      format.html { redirect_back_or_to user_path(current_user.id), notice: 'Deleted!' }
+    end
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :text)
   end
 end

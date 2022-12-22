@@ -15,6 +15,9 @@
 
   <section class="posts-sec">
     <h2>Recent Posts</h2>
+    <%if can? :create, Post %>
+      <%= link_to "New Post", new_user_post_path(@user.id) %>
+    <% end %>
     <ul>
       <% @user.posts.each do |post| %>
         <%= link_to user_post_path(@user.id, post.id) do %>

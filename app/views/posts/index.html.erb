@@ -17,6 +17,11 @@
             <p><%= post.text %></p>
             <span>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %></span>
           </li>
+          <% if can? :destroy, post %>
+            <%= form_with model: post, url: user_post_path(@user.id, post.id), method: :delete do |form| %>
+              <%= form.submit "Delete Post", class: "see" %>
+            <% end %>
+          <% end %>
           <div class="comments">
             <% post.last_five_comments.each do |comment| %>
               <p><%= comment.author.name %>: <%= comment.text %></p>
