@@ -9,6 +9,9 @@ gem 'rails', '~> 7.0.4'
 # Devise for authentication
 gem 'devise'
 
+gem 'rswag-api'
+gem 'rswag-ui'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
@@ -60,6 +63,7 @@ group :development, :test do
   gem 'letter_opener'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'rswag-specs'
 end
 
 group :development do
